@@ -3,4 +3,5 @@
 export(html2canvas)
 export(html2canvasOutput)
 export(renderHtml2canvas)
+export(runExample)
 import(htmlwidgets)
