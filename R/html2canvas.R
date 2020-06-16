@@ -54,3 +54,12 @@ renderHtml2canvas <- function(expr, env = parent.frame(), quoted = FALSE) {
   if (!quoted) { expr <- substitute(expr) } # force quoted
   htmlwidgets::shinyRenderWidget(expr, html2canvasOutput, env, quoted = TRUE)
 }
+
+#' Run html2canvas example
+#' Launches
+#' to experiment with.
+#' @export
+runExample <- function() {
+  appDir <- system.file("example", package = "html2canvas")
+  shiny::runApp(appDir, display.mode = "normal")
+}
