@@ -1,0 +1,5 @@
+dependencies:
+- name: html2canvas
+  version: 1.0.0
+  src: htmlwidgets/lib/html2canvas-1.0.0
+  script: html2canvas.js
